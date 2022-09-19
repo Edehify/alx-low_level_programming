@@ -1,1 +1,1 @@
-# alx-low_level_programming
+coding on array and pointer 
