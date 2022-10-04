@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * argstostr - prints args
  * @ac: takes in width of grid
