@@ -3,14 +3,14 @@
 /**
  * main - Program to print all possible combinations of single-digit numbers.
  * from 0 to 9 eg 0, 1, 2, 3, 4, ..., followed by new line.
- * @i - char.
+ * @i - int.
  *
  * Return: 0 if successful.
  */
 
 int main(void)
 {
-	char i;
+	int i;
 
 	i = 48;
 	while (i < 58)
