@@ -5,7 +5,7 @@
  * @num - int
  * @last_digit - int
  *
- * Return: int
+ * Return: last_digit
  */
 
 int print_last_digit(int num)
