@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdbool.h>
 
 /**
  * *cap_string - Capitalize all the words in a sentence to
@@ -8,30 +7,30 @@
  */
 char *cap_string(char *str)
 {
-	char str1[] = ",\t;\n; .!?\"(){}";
-	bool Isvalid, i, j;
+	char sep[] = ",\t;\n; .!?\"(){}";
+	int flag, i, ii;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		Isvalid = false;
+		flag = 0;
 
 		if (i == 0)
 		{
-			Isvalid = true;
+			flag = 1;
 		}
 		else
 		{
-			for (j = 0; str1[j] != '\0'; j++)
+			for (ii = 0; sep[ii] != '\0'; ii++)
 			{
-				if (str[i - 1] == st1[j])
+				if (str[i - 1] == sep[ii])
 				{
-					Isvalid = true;
+					flag = 1;
 					break;
 				}
 			}
 		}
 
-		if (Isvalid == true)
+		if (flag == 1)
 		{
 			if (str[i] <= 'z' && str[i] >= 'a')
 			{
